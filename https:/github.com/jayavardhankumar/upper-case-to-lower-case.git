@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+int i;
+char ch[100];
+printf("ENTER THE WORD WITH UPPERCASE AND LOWERCASE LETTERS\n");
+scanf("%s",ch);
+for (i=0;i<strlen(ch);i++)
+{
+    if (isupper(ch[i]))
+    ch[i]=tolower(ch[i]);
+    else
+    ch[i]=toupper(ch[i]);
+}
+printf("THE REQUIRED WORD:\n");
+printf("%s",ch);
+
+	return 0;
+}
